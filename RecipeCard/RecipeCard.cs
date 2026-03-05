@@ -28,7 +28,7 @@ struct RecipeCard
 
         for (int i = 0; i < Ingredients.Length; i++)
         {
-            Ingredients[i].Amount *= (newServings - Servings);
+            Ingredients[i].Amount *= (newServings / Servings);
         }
         Servings = newServings;
         return this;
